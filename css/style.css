@@ -1,0 +1,272 @@
+*{
+    background-color: transparent;
+    color:black;
+    text-align:center;    
+    box-sizing: border-box;
+
+}
+
+.body {
+    display: grid;
+    grid-template-areas:
+    "nav header header"
+    "nav productos publicidad"
+    "nav servicios publicidad"
+    "nav footer footer";
+    font-family: 'Ubuntu',sans-serif;
+    background-color:transparent;
+    color: white;
+
+}
+    /* HEADER*/
+
+.header {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .headerLogo {
+               width: 100px;
+        height: 100px;
+        margin-left: 60px;
+    }
+    
+    .headerLogo img {
+        width: 90%;
+
+    }
+
+    .headerMenu {
+        width: 40%;
+        margin-right: 100px;
+
+    }
+
+        .headerMenu ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:100%;
+         
+}
+
+/* TITULO */
+
+.pageTitle {
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+    background-color: #bd6b1f69;
+    color: rgba(0, 0, 0, 0.582);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:blanchedalmond;
+}
+
+@keyframes aparecer {
+
+    0% {
+    opacity: 0;
+
+    }
+    100% {
+    opacity: 1;
+        
+    }
+
+}
+
+h1{
+    color: rgba(248, 245, 245, 0.849);
+    font-family:'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 70px;
+    font-style: italic;
+}
+    h2{
+        color: rgba(80, 31, 17, 0.849);
+        font-family: 'sans-serif', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+        font-size: large;
+        line-height: 25px;
+    }
+
+/*Main*/
+
+.main {
+    display: flex;
+    height: 80vh;
+    margin: 50px 0;
+
+}
+.mainSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 5%;
+}
+
+.mainSection article {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5%;
+
+}
+
+.fieldset_contacto {
+
+    text-align: center;
+ margin-right: 10px;
+}
+
+    .img_index{
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        height: 100%;
+        border-collapse: collapse;
+
+    }
+
+    li{color: rgba(19, 2, 59, 0.849);
+        font-family: 'sans-serif', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold; 
+        font-size:20px;
+        width: 10%;
+        text-decoration: none;
+              
+        }
+
+.cuidados{
+
+    color: black;
+    font-family: 'ubuntu';
+    font-weight: bold; 
+    font-size:5px;
+    border: 5px solid #974c06dc;
+    border-radius: 10px;
+    padding: 5%;
+
+ 
+    }
+
+        h3{
+            color: rgba(80, 31, 17, 0.849);
+            font-family: 'sans-serif', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            font-size: large;
+            font-style: italic;
+        }
+   
+        .mainAside {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 2%;
+            margin: 1%;
+            border: 1px solid black;
+            border-radius: 20px;    
+            text-align: center;
+        }
+        
+        .mainAside img {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 2%;
+            margin: 1%;
+            border: 1px solid black;
+            border-radius: 20px;    
+            text-align: center;
+        }
+        
+
+.tablaOferta{
+    border: 5px solid #974c06dc;
+    border-radius: 20px;
+    padding: 5%;
+}
+
+.tabla1{
+    border: 5px solid #974c06dc;
+    border-radius: 20px;
+    padding: 5%;
+}
+
+.tabla2{
+
+    border: 5px solid #974c06dc;
+    border-radius: 20px;
+    padding: 5%;
+
+}
+
+.img_table{
+    
+    height:350px; 
+    width:350px;
+}
+p{  color: rgba(80, 63, 17, 0.849);
+    font-family: 'ubuntu';
+    font-weight: bold;
+    text-align: center;
+
+}
+
+/*GRID HOME*/
+
+.seccionservicios{
+    display:grid;
+    grid-template-columns: repeat (3. 1fr);
+    grid-template-rows: repeat (25% 75%);
+    grid-template-areas:unset;
+    
+    width: 70%;
+
+}
+
+.articleUNO{
+    grid-area: serviciosindex;
+    width: 30%;
+    display:flex;
+    flex-direction: column;
+}
+
+.articleDOS{
+    grid-area: serviciosindex;
+    width: 30%;
+    display:flex;
+    flex-direction: column;
+}
+
+.articleTRES{
+    grid-area: serviciosindex;
+    width: 30%;
+    display:flex;
+    flex-direction: column;
+}
+
+/*//Footer\\*/
+
+.footeer{
+
+grid-area: my-footer;
+background-color: darkorchid;
+
+}
+.icono{
+    width: 3%;
+    align-items: center;
+    align-content: center; 
+    text-align: center;
+}
+
