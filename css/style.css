@@ -57,7 +57,7 @@
 /* TITULO */
 
 .pageTitle {
-    animation-duration: 3s;
+    animation-duration: 4s;
     animation-name: aparecer;
     animation-iteration-count: infinite;
     background-color: #bd6b1f69;
