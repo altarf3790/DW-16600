@@ -257,16 +257,45 @@ p{  color: rgba(80, 63, 17, 0.849);
 
 /*//Footer\\*/
 
-.footeer{
 
-grid-area: my-footer;
-background-color: darkorchid;
-
-}
-.icono{
-    width: 3%;
+.footer {
+    width: 100%;
+    height: 90px;
+    background-color: #bd6b1f69;
+    color: black;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    align-content: center; 
-    text-align: center;
+}
+
+
+/*Footer*/
+
+.footerLogo {
+    height: 80px;
+    margin-right: 80px;
+}
+
+.footerLogo img {
+    height: 100%;
+}
+
+.footerSocial {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerSocialLinks {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerSocialLinks img {
+    height: 30px;
 }
 
